@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись - Библиотека</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header"><h1>Библиотека</h1><p>Книги для учёбы и отдыха</p></header>
+    <nav><a href="index.html">Главная</a><a href="books.html">Книги</a><a href="contacts.html">Контакты</a><a href="register.html">Запись в библиотеку</a></nav>
+    <main>
+        <h2>Запись в библиотеку</h2>
+        <p>Заполните данные будущего читателя.</p>
+        <form id="reader-form">
+            <label for="reader-name">Имя</label>
+            <input type="text" id="reader-name" name="name" placeholder="Ваше имя" required maxlength="80" pattern=".*\S.*" title="Введите имя, содержащее хотя бы один непробельный символ">
+
+            <label for="reader-email">Электронная почта</label>
+            <input type="email" id="reader-email" name="email" placeholder="reader@example.com" required>
+
+            <label class="agreement" for="reader-agreement">
+                <input type="checkbox" id="reader-agreement" name="agreement" required>
+                Согласен на обработку введённых данных
+            </label>
+
+            <button type="submit">Отправить данные</button>
+        </form>
+        <p id="form-message" role="status"></p>
+    </main>
+    <footer><p>Учебный сайт · Лабораторная работа №4</p></footer>
+</body>
+</html>
